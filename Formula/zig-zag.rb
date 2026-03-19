@@ -1,26 +1,26 @@
 class ZigZag < Formula
   desc "Blazing-fast LLM proxy with OpenAI-compatible API"
   homepage "https://github.com/kienvan-de/zig-zag"
-  version "0.6.1"
+  version "0.6.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kienvan-de/zig-zag/releases/download/v#{version}/zig-zag-macos-aarch64.tar.gz"
-      sha256 "3aa48eb46c1d58fd5b5b54a8e212edf29b16d01129ac424c467f2e4e1925655a"
+      sha256 "4fab60e9ff9d5f442c4b6908c835ec19d485049dc44f295196d4bacdee0edf5c"
     else
       url "https://github.com/kienvan-de/zig-zag/releases/download/v#{version}/zig-zag-macos-x86_64.tar.gz"
-      sha256 "3fdc7dacf1721a7c054e8ab756a5eb65d4f813bb32ce1c41e1be838f3294bec0"
+      sha256 "fa10567adf222bdfa3ec1c899e1b88613e2381c739705237e151b78c2b9cb3f9"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/kienvan-de/zig-zag/releases/download/v#{version}/zig-zag-linux-aarch64.tar.gz"
-      sha256 "7f1b41c1a3544df1fd6bad816b4265579fe30c76ee981fdc5e0c15300f25c376"
+      sha256 "36147569a1d9de479ca7f50ecea44339eef61eb18255f2e61ee087e94b03a58b"
     else
       url "https://github.com/kienvan-de/zig-zag/releases/download/v#{version}/zig-zag-linux-x86_64.tar.gz"
-      sha256 "1cafeaf8503a60880e530493b1114d5a6db443ff18175c8aadb991ccc82700b9"
+      sha256 "248dff327aadc60c1515865c6c24eff7c3ddf5a6923710b3bec3f1cf9c314077"
     end
   end
 
