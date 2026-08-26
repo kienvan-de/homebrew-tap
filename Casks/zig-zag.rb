@@ -11,6 +11,13 @@ cask "zig-zag" do
 
   app "zig-zag.app"
 
+  # The app is ad-hoc signed (no Apple Developer account). Remove the quarantine
+  # attribute so macOS Gatekeeper does not block it after download.
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/zig-zag.app"]
+  end
+
   zap trash: [
     "~/.config/zig-zag",
   ]
