@@ -7,7 +7,7 @@ cask "zig-zag" do
   desc "Blazing-fast LLM proxy — native macOS menu bar app"
   homepage "https://github.com/kienvan-de/zig-zag"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "zig-zag.app"
 
