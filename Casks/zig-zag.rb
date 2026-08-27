@@ -1,6 +1,6 @@
 cask "zig-zag" do
-  version "1.1.0"
-  sha256 "b1b301fefe7be9b96d53f427aabe11dfd0e55f5b298f7fcf838d5cba15544df2"
+  version "1.2.0"
+  sha256 "8f777eacf164ecc0d7ad4fc6c9d7e0089463c543fe3d87f9c31489c626440555"
 
   url "https://github.com/kienvan-de/zig-zag/releases/download/v#{version}/zig-zag-macos-app.tar.gz"
   name "zig-zag"
